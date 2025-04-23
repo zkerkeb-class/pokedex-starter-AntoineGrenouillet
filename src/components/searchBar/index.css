@@ -1,0 +1,117 @@
+/* Conteneur principal */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Barre de recherche avec animation */
+.search-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-control {
+  position: relative;
+  width: 250px;
+}
+
+/* Style de l'input */
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #ff8fab;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+}
+
+/* Effet au focus */
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: #ff8fab;
+}
+
+/* Label stylisé avec animation */
+.form-control label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 16px;
+  color: #ff8fab;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Animation du label quand l'input est en focus */
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: #ff8fab;
+  transform: translateY(-20px);
+}
+
+/* Bouton pour effacer le champ */
+.clear-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.clear-btn:hover {
+  background: #ff1a1a;
+}
+
+/* Conteneur des types */
+.types-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+/* Boutons des types */
+.types-container button {
+  padding: 5px 10px;
+  border: none;
+  background: #ffb3c6;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.form-control label .space {
+  display: inline-block;
+  width: 5px; /* Ajuste l'espace entre les mots */
+}
+
+/* Hover - effet de changement de couleur et d'échelle */
+.types-container button:hover {
+  background-color: #ff8fab; /* Changer la couleur de fond au survol */
+  color: white; /* Garde le texte en blanc */
+  transform: scale(1.1); /* Augmenter légèrement la taille du bouton */
+}
+
+/* Bouton sélectionné */
+.types-container .selected-type {
+  background-color: #ff8fab; /* Couleur de fond spécifique pour les types sélectionnés */
+  color: white; /* Texte en blanc */
+  transform: scale(1.1); /* Effet de zoom sur le bouton sélectionné */
+}
+
+.types-container .selected-type:hover {
+  background-color: #ff8fab; /* Couleur plus foncée au survol */
+  transform: scale(1.1); /* Garde l'effet de zoom */
+}
+

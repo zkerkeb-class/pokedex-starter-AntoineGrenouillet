@@ -1,0 +1,123 @@
+.pokemon-card{
+  border: 2px solid black;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 12px; 
+  background-color: #ff8fab;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.pokemon-name{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pokemon-image{
+  width: 200px;
+  height: 200px;
+  background-color: #ffe5ec;
+  border: 2px solid #fb6f92;
+
+}
+
+.pokemon-types-container{
+  background-color: #ffb3c6;
+  border: 2px solid #ffe5ec;
+}
+
+.type-icon {
+  width: 100px;
+  margin-top: 4px;  
+}
+
+.pokemon-stats-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #ffb3c6;
+  border: 1px solid #ffe5ec;
+  padding-left: 5px;
+  padding-bottom: 2px;
+
+}
+
+
+/* Style de base pour les boutons */
+button {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+/* Bouton Supprimer */
+.delete-btn {
+  background-color: #ffb3c6;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #ffb3c6;
+  transform: scale(1.05);
+}
+
+.delete-btn:active {
+  background-color: #ffb3c6;
+}
+
+/* Bouton Modifier */
+.edit-btn {
+  background-color: #ffb3c6;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #ffb3c6;
+  transform: scale(1.05);
+}
+
+.edit-btn:active {
+  background-color: #ffb3c6;
+}
+
+/* Bouton Enregistrer */
+.save-btn {
+  background-color: #ffb3c6;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #ffb3c6;
+  transform: scale(1.05);
+}
+
+.save-btn:active {
+  background-color: #ffb3c6;
+}
+
+/* Bouton Voir le Pokémon */
+.view-btn {
+  background-color: #ffb3c6;
+  color: white;
+}
+
+.view-btn:hover {
+  background-color: #ffb3c6;
+  transform: scale(1.05);
+}
+
+.view-btn:active {
+  background-color: #ffb3c6;
+}
+
+
+
+
+
