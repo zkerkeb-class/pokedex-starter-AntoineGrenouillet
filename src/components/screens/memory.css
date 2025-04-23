@@ -1,0 +1,79 @@
+.game-stats {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff8fab;
+  }
+  
+  .memory-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    justify-items: center;
+  }
+  
+  .memory-card {
+    width: 100px;
+    height: 140px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .memory-card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card-back {
+    width: 80%;
+    height: 80%;
+  }
+  
+  .memory-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+  
+  .modal-content button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: #ffb3c6;
+    color: white;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .modal-content button:hover {
+    background: #ff8fab;
+  }
+
+  .modal-content p {
+    color: #ffb3c6;
+  }
+  
+  

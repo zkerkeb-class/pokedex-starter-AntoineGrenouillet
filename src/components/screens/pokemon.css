@@ -1,0 +1,9 @@
+
+.pokemon-detail-page {
+    display: flex;
+    flex-direction: column; /* ✅ aligne les enfants en colonne */
+    align-items: center;     /* centre horizontalement */
+  }
+
+
+  
